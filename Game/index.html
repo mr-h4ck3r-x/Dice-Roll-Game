@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="web icon" href="/imgs/dice.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+        .back-btn {
+            background-color:  #6d6e70;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .back-btn:hover {
+            background-color: #707274;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Nunito', sans-serif;
+            color: #ffffff;
+        }
+        .top-left {
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="gradient">
+        <video autoplay muted loop id="myVideo">
+            <source src="bg-video.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="top-left">  <button class="back-btn"><a href="/index.html">Go Back</a></button></div>
+
+    <main>
+      
+        <section class="player player_1 player--active">
+            <h2 class="name " id="p1Name" style="padding: 15px 30px 20px; font-size: 28px; ">Player 1</h2>
+            <br>
+            <p class="tChances"> Present score</p>
+            <p class="score" id="p1Score">0</p>
+            <p class="tChances" id="player1chances">RollsLeft:</p>
+            <div class="current">
+                <p class="current-label"> No of winnings</p>
+                <p class="current-score" id="p1CurrentScore">0</p>
+            </div>
+        </section>
+        <section class="player player_2">
+            <h2 class="name" id="p2Name" style="padding: 15px 30px; font-size: 28px; ">Player 2</h2>
+            <br>
+            <p class="tChances"> Present score</p>
+            <p class="score" id="p2Score">0</p>
+            <p class="tChances" id="player2chances">RollsLeft:</p>
+            <div class="current">
+                <p class="current-label"> No of winnings</p>
+                <p class="current-score" id="p2CurrentScore">0</p>
+            </div>
+
+        </section>
+        <img src="dice-1.png" alt="Playing dice" class="dice" style="border-radius: 25px; box-shadow: 4px 5px 10px; border: 2px solid black;">
+        <button class="btn btn--new"onclick="editNames()">📛Edit-Names </button>
+        <button class="btn btn--roll" onclick="playSound()">🎲Dice Roll </button>
+        <button class="btn btn--hold" onclick="playAgain()">🛑PlayAgain</button><br><br><br><br>
+        <button class="btn btn--hold"  onclick="restartGame()"style="margin: 70px; left: 430px;">🎮New game</button>
+    
+    </main>
+    <script src="game.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<head>
+    <title>Dice Roll Game</title>
+    <meta name="theme-color" content="#45474B">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="ourteam.css">
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="web icon" href="imgs/dice.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        /* Project banner */
+        .main {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px 80px 10px 80px;
+        }
+
+        .text1 {
+            font-size: 62px;
+            font-weight: 600;
+            font-family: 'Outfit', sans-serif;
+            color: rgb(136, 135, 135);
+            text-align: start;
+
+        }
+
+        .bg1 {
+            border-radius: 14px;
+        }
+
+        .dark-color {
+            font-size: 62px;
+            color: black;
+        }
+
+
+        /* Buttons  */
+
+        .buttons {
+            display: flex;
+            align-items: flex-start;
+        }
+
+
+        .button2 {
+            height: 50px;
+            width: 190px;
+            cursor: pointer;
+            border: 2px solid #252525;
+            border-radius: 30px;
+            color: #333;
+        }
+
+
+        .btn-txt2 {
+            font-weight: 800;
+            letter-spacing: 4px;
+            color: #fff;
+        }
+
+
+        /* Features */
+
+        .title {
+            font-size: 32px;
+            font-weight: 500;
+            font-family: 'Outfit', sans-serif;
+            color: #252525;
+            align-content: center;
+        }
+
+        .features {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            margin: 10px 80px 10px 80px;
+        }
+
+        .sub-title {
+            font-size: 32px;
+            font-weight: 500;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .f1,.f2>p {
+            font: 1em sans-serif;
+        }
+
+        .myteamstreangth {
+            font: 1.3em sans-serif;
+            color: #252525;
+            margin-bottom: 20px;
+        }
+        section>#contactus{
+            padding-top: 70px;
+        }
+
+        #cantactus{
+            gap: 70px;
+            padding-top: 30px;
+            padding-bottom: 70px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- This code is only belongs to Header of the page-->
+    <header>
+        <a class="logo" href="index.html"><img height="32px" src="imgs/site-logo.svg" alt="logo"></a>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#ourteam">Our Team</a></li>
+                <li><a href="#cantactus">Contact Us</a></li>
+            </ul>
+        </nav>
+        <a class="Play" href="./Game/index.html">Play Now</a>
+    </header>
+
+
+
+    <!-- This is the banner post for the dice game  -->
+    <div id="project" class="main">
+
+        <div class="text1">
+            <p>Chance for a <span class="dark-color">fun</span><br> and <span class="dark-color">entertaining
+                    gaming</span>
+                experience. <br>
+            </p>
+
+            <div class="buttons">
+                <span style="width: 10px;"></span>
+
+                <div><button style="background-color: #163020" class="button2">
+                        <a style="text-decoration: none;" href="./Game/index.html">
+                            <span class="btn-txt2">Play Now</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <video autoplay loop height="300px" class="bg1">
+                <source src="pexels-taryn-elliott-5835635 (2160p).mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- This code is only belongs to features part -->
+    <span class="title">Features</span> <br>
+
+    <div class="features">
+        <div>
+            <img src="banner-dice.jpg" width="700px" style="margin-right: 20px; border-radius: 14px;" alt="">
+        </div>
+        <div class="f1">
+            <h4 class="sub-title">Real Dice Feel</h4>
+            <br>
+            <p>The game can have sound effects and animations to enhance the user experience <br> and simulate the
+                feeling of rolling real dice game.</p>
+        </div>
+        <div class="f2">
+            <h4 class="sub-title">Multiplayer Mode</h4>
+            <br>
+            <p>The game can have a multiplayer mode, where two <br> or more users can join and roll dice together.</p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <span id="ourteam" class="title">Our Team</span> <br>
+    <p class="myteamstreangth">If everyone is moving forward together, then success takes care of itself.</p>
+
+    <section>
+        <div class="card-top">
+
+            <div class="card">
+                <img class="profileimg" loading="eager" src="/team/root@user1.jpg.png" alt="N Laxmi Narasimha">
+                <h2>N Laxmi Narasimha</h2>
+                <p> Hi there! I'm a passionate Web
+                    developer with a keen interest in Cybersecurity.</p>
+                </p>
+            </div>
+
+            <div class="card">
+                <img class="profileimg" src="/team/prathyush.png" alt="Prathyush">
+                <h2>Prathyush</h2>
+                <p>Full stack web developer</p>
+            </div>
+
+
+
+            <div class="card">
+                <img class="profileimg" src="/team/haleem.png" alt="Syed Abdul Haleem">
+                <h2>Syed Abdul Haleem</h2>
+                <p>I'm a web developer who loves to create beautiful and functional websites for people.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="profileimg" src="/team/P.durga prasad.png" alt="P.Durga Prasad">
+            <h2>P.Durga Prasad</h2>
+            <p>Full stack web developer</p>
+        </div>
+
+        <div class="card">
+            <img class="profileimg" src="/team/akash.png" alt="Akash">
+            <h2>Akash Rajpoot</h2>
+            <p>Full stack web developer</p>
+        </div>
+
+        <div class="card">
+            <img class="profileimg" src="/team/raviteja.png" alt="E.Raviteja">
+            <h2>E.Raviteja</h2>
+            <p>Full stack web developer</p>
+        </div>
+
+    </section>
+
+    <style>
+        .con-title {
+            font-family: 'Outfit', sans-serif;
+            margin-bottom: 10px;
+            color: #252525;
+        }
+
+        .Navigate-add {
+            margin-top: 20px;
+            color: #402B3A;
+        }
+
+        .nav-in-map {
+            color: #252525;
+            padding-bottom: 10px;
+        }
+        .nav-map{
+            padding-top: 40px;
+        }
+
+        .Navigate-add>.mail-btn {
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .mail-btn>a {
+            text-decoration: none;
+            color: #252525;
+        }
+    </style>
+
+
+    <!--  TODO: Add Contact us feature and embedded gmaps -->
+    <h3 class="title">Get In touch</h3>
+    <section id="cantactus">
+        <br>
+        <div class="Navigate-add">
+            <p>&#x2B17; CPIT Hyderabad,T.R.R COLLEGE OF TECHNOLOGY Meerpet, <br> Balapur(M), Hyderabad 500097</p>
+            <p>+91 9387x5xx20</p>
+            <p class="mail-btn"><a href="mailto:cpit@edunetfoundation.org">cpit@edunetfoundation.org</a></p>
+            <div class="nav-map">
+            <p class="nav-in-map">Navigate in the map</p>
+            <div><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d566.9312917335802!2d78.52794179913474!3d17.321726043435916!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9890d159d3dd%3A0xac53b9d077103e7b!2sT.R.R.COLLEGE%20OF%20TECHNOLOGY%20BTECH%2FDIPLOMA!5e0!3m2!1sen!2sin!4v1704516962590!5m2!1sen!2sin"
+                    width="400" height="250"
+                    style="border:3px solid rgba(0, 0, 0, 0.567); border-radius: 16px; margin-bottom: 20px;"
+                    allowfullscreen="none" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe></div>
+            </div>
+        </div>
+        <div class="form">
+            <form style="background-color:gainsboro;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="rating">Rate Your Overall Experience:</label>
+                <select id="rating" name="rating" required>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="below-average">Below Average</option>
+                    <option value="poor">Poor</option>
+                </select>
+
+                <label for="feedback">Specific Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" style="resize: none;" required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <!--This code is only belongs to footer of the page -->
+    <footer class="footer">
+        <img src="/imgs/site-logo.svg" height="40px" alt="">
+        <hr class="hr-1">
+        <br>
+        <p style="text-align: center;color: aliceblue;margin-top: 10px;font-family: sans-serif;">&copy; 2023 Dice-Roll.
+            All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
